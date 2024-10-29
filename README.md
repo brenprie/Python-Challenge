@@ -19,7 +19,7 @@ Your task is to create a Python script that analyzes the records to calculate ea
 
 Your analysis should align with the following results:
 
-    ![PyBank Sample Output](https://github.com/user-attachments/assets/70b3adcc-824b-420e-8d3b-4a3e777c11f0)
+![PyBank Sample Output](https://github.com/user-attachments/assets/1fb77d16-d6bc-4c07-8d12-fc8f282671a7)
 
 In addition, the final script should both print the analysis to the terminal and export a text file with the results.
 
