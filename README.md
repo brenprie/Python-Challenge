@@ -28,7 +28,7 @@ In addition, the final script should both print the analysis to the terminal and
 * [Link](https://github.com/brenprie/Python-Challenge/blob/main/PyBank/main.py) to script file in /PyBank on this repo.
 
 ## Output
-* [Link](https://github.com/brenprie/Python-Challenge/blob/main/PyBank/Analysis/budget_analysis.txt) to output text file in /PyBank/analysis on this repo.
+* [Link](https://github.com/brenprie/Python-Challenge/blob/main/PyBank/Analysis/budget_analysis.txt) to output text file in /PyBank/Analysis on this repo.
 
 # Part 2: PyPoll
 
