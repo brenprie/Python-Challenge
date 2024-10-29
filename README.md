@@ -24,11 +24,11 @@ Your analysis should align with the following results:
 In addition, the final script should both print the analysis to the terminal and export a text file with the results.
 
 ## Data and script files
-* [Link](https://github.com/brenprie/Python-Challenge/blob/main/Resources/budget_data.csv) to csv data file in /PyBank/Resources this repo. 
+* [Link](https://github.com/brenprie/Python-Challenge/blob/main/PyBank/Resources/budget_data.csv) to csv data file in /PyBank/Resources this repo. 
 * Link to script file on this repo.
 
 ## Output
-* [Link](https://github.com/brenprie/Python-Challenge/blob/main/analysis/budget_analysis.txt) to output text file in /PyBank/analysis on this repo.
+* [Link](https://github.com/brenprie/Python-Challenge/blob/main/PyBank/Analysis/budget_analysis.txt) to output text file in /PyBank/analysis on this repo.
 
 # Part 2: PyPoll
 
