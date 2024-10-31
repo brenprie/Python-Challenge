@@ -14,7 +14,7 @@ changePL = 0
 changePLList = [] # list for month-over-month change in profit
 monthList = [] # list for corresponding month
 maxChangePLList = ["", float()] # list to contain date and value for greatest % increase
-minChangePLList = ["", float()] # list to contain date and value for greatest % increase
+minChangePLList = ["", float()] # list to contain date and value for greatest % decrease
 
 # Open and read the csv
 with open(file_to_load, "r", encoding="utf-8") as csvfile:
@@ -25,7 +25,7 @@ with open(file_to_load, "r", encoding="utf-8") as csvfile:
 
     # Process each row of data
     # I FORMULATE SOLUTION SO DO NOT NEED TO TREAT FIRST DATA ROW IN ISOLATION, 
-    # DUE TO NEED TO CALCULATE CHANGE IN PROFIT AGAINST PRIOR VALUE IN PRIOR ROW
+    # (GIVEN CHANGE IN PROFIT IS CALCULATED AGAINST PRIOR VALUE IN PRIOR ROW, AND ROW 2'S PRIOR ROW IS HEADER ROW)
     for row in reader:
         # Add 1 to running count of months
         totalMonths += 1
@@ -53,7 +53,7 @@ with open(file_to_load, "r", encoding="utf-8") as csvfile:
     # Calculate average net change across months:
     avgChange = sum(changePLList) / len(changePLList)
 
-    # MORE INTUITIVE WAY TO DETERMINE GREATEST MONTH-OVER-MONTH PL INCREASE OR DECREASE, AND CORRESPONDING MONTHS
+    # EASIER WAY TO DETERMINE GREATEST MONTH-OVER-MONTH PL INCREASE OR DECREASE, AND CORRESPONDING MONTHS:
     # MaxIncr = max(changePLList)
     # MaxIncrIndex = changePLList.index(MaxIncr)
     # MaxIncrMonth = monthList[MaxIncrIndex]
@@ -69,9 +69,9 @@ output = (
     f"\nTotal: ${totalNetPL}\n"
     f"\nAverage Change: ${avgChange:.2f}\n"
     f"\nGreatest Increase in Profits: {maxChangePLList[0]} (${maxChangePLList[1]})\n"
+    # f"\nGreatest Increase in Profits: {MaxIncrMonth} (${MaxIncr})\n"  # THIS LINE WOULD REPLACE PRIOR IF USE ALTERNTIVE SOLUTION ABOVE
     f"\nGreatest Decrease in Profits: {minChangePLList[0]} (${minChangePLList[1]})\n\n"
-    # f"\nGreatest Increase in Profits: {MaxIncrMonth} (${MaxIncr})\n"
-    # f"\nGreatest Decrease in Profits: {MaxDecrMonth} (${MaxDecr})\n"
+    # f"\nGreatest Decrease in Profits: {MaxDecrMonth} (${MaxDecr})\n\n"  # THIS LINE WOULD REPLACE PRIOR IF USE ALTERNATIVE SOLUTION ABOVE
     )
 
 # Print output to terminal
