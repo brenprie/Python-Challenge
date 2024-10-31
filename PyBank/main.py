@@ -5,7 +5,7 @@ import os
 file_to_load = os.path.join("Resources", "budget_data.csv")  
 file_to_output = os.path.join("Analysis", "budget_analysis.txt")  
 
-# Define variables and lists
+# Initialize variables and lists
 totalMonths = 0
 totalNetPL = 0
 currentPL = 0 
@@ -31,7 +31,7 @@ with open(file_to_load, "r", encoding="utf-8") as csvfile:
         totalMonths += 1
         # Obtain current PL value
         currentPL = int(row[1])
-        # Add current PL to running total net PL
+        # Add current PL value to running total net PL value
         totalNetPL += currentPL
         # Calculate month-over-month change in net PL, record to change list
         # Record corresponding month to month list
