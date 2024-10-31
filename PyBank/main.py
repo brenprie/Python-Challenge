@@ -3,7 +3,7 @@ import os
 
 # Data file, output file
 file_to_load = os.path.join("Resources", "budget_data.csv")  
-file_to_output = os.path.join("analysis", "budget_analysis.txt")  
+file_to_output = os.path.join("Analysis", "budget_analysis.txt")  
 
 # Define variables and lists
 totalMonths = 0
