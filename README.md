@@ -1,7 +1,5 @@
 # Python-Challenge
 
---- Challenge currently in progress ---
-
 # Part 1: PyBank
 
 ## Objective
